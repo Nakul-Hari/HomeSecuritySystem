@@ -34,14 +34,14 @@ This project combines hardware and software components to create a motion-activa
 - C/C++ Compiler for the MKL25Z4 microcontroller
 
 ### Code Structure
-- The Python script (`main.py`) captures images from the webcam when a UART command ('Y') is received.
-- The C/C++ code (`main.c`) runs on the MKL25Z4 microcontroller and is responsible for motion detection using the PIR sensor and UART communication with the computer.
+- The Python script (`FRDM_project.py`) captures images from the webcam when a UART command ('Y') is received.
+- The C/C++ code (`FRDM_Project_KeliuVision.cpp`) runs on the MKL25Z4 microcontroller and is responsible for motion detection using the PIR sensor and UART communication with the computer.
 
 ## Usage
 
-1. Compile and flash the microcontroller code (`main.c`) onto the MKL25Z4 microcontroller.
+1. Compile and flash the microcontroller code (`FRDM_Project_KeliuVision.cpp`) onto the MKL25Z4 microcontroller.
 2. Ensure that the hardware is set up correctly, including the PIR sensor, RGB LEDs, and webcam.
-3. Run the Python script (`main.py`) on your computer. This script listens for UART commands from the microcontroller.
+3. Run the Python script (`FRDM_project.py`) on your computer. This script listens for UART commands from the microcontroller.
 4. When motion is detected by the PIR sensor, the microcontroller sends a UART command ('Y') to the computer, triggering the Python script to capture an image from the webcam and save it.
 5. The RGB LEDs indicate the system's status: 
    - Red LED on: Motion detected
